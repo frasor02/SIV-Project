@@ -1,0 +1,4 @@
+ipykernel
+ale_py
+opencv-python
+matplotlib
