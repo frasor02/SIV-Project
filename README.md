@@ -1,6 +1,10 @@
 # SIV Project: Extracting Features from Atari games
 The repository contains code regarding the project for the course of Signal, Image and Video of the University of Trento.
-The goal of the project is to gather information on frames of a given game (i.e. Breakout).
+
+The goal of the project is to gather information on frames of two games used to test the processing algorithm:
+- Breakout
+- Skiing.
+
 The processing is composed of the following phases:
 - Finding SIFT Keypoints
 - Feature matching between frames
@@ -9,17 +13,20 @@ The processing is composed of the following phases:
 - Track the movement of moving objects.
 
 ## Installation guide
-To run the code, create a .venv file and use the command:
+To install required modules, create a .venv file and use the command:
 ```
 pip install -r requirements.txt
 ```
 
-## Acquiring the images
-The folders acquisition contains the notebook that acquires the frames of a given atari game,
+## Acquiring the Images
+The folder */acquisition* contains the notebooks that acquires the frames of a given atari game,
 saving them in path *../imgs/{game_name}*.
+There are two options when it comes to acquiring frames:
+- In the notebook *random_acquisition.ipynb* a random agent plays the games allowing for faster acquisition at the cost of low scores. 
+- In the notebook *human_acquisition.ipynb* a human player can play directly the games using the keyboard allowing for higher scores at the cost of lengthier acquisition times.
 
-## Video visualization
-In processing folder there is a notebook to merge the frames into a video in order to better visualize the episode of agent that played the game.
+## Episodes Video Visualization
+In */processing* folder there is a *frames_to_video.ipynb* notebook to merge the frames into a video in order to better visualize the episode of the desired game.
 
 ## Processing
-In processing folder there is a notebook that processes the frames data to collect features from the game.
+In */processing* folder there is a *processing.ipynb* notebook that processes the frames data to collect features from both the games.
