@@ -1,4 +1,5 @@
-ipykernel
-ale_py
-opencv-python
-matplotlib
+ipykernel==6.29.5
+ale-py==0.10.1
+opencv-python==4.10.0.84
+matplotlib==3.9.2
+keyboard==0.13.5
